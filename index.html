@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfredo Quintella — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#hero" class="nav-name">Alfredo Quintella</a>
+    <div class="nav-links">
+      <a href="#awards">Awards</a>
+      <a href="#Work Experience & Studies">Work Experience & Studies</a>
+      <a href="#about">About</a>
+    </div>
+    <button class="nav-burger" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Computer Engineer · Mathematician · Researcher</div>
+      <h1>Alfredo<br><em>Quintella</em></h1>
+      <p class="hero-sub">
+        Mathematics-driven developer with strong foundations in algorithms and computational modeling.
+        Motivated to work with optimization, game theory, and quantitative finance —
+        currently at ENSTA Paris after three years at IME, Brazil.
+      </p>
+
+      <div class="cv-block">
+        <p class="cv-label">Resume</p>
+        <div class="cv-group">
+          <a class="btn-cv" href="assets/cv/AlfredoQuintella_resume_EN.pdf" target="_blank">
+            <span class="btn-lang">EN</span> English
+          </a>
+          <a class="btn-cv" href="assets/cv/AlfredoQuintella_CV_FR.pdf" target="_blank">
+            <span class="btn-lang">FR</span> Francais
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span class="scroll-line"></span>
+        <span>scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="section-header">
+      <span class="section-num">01 —</span>
+      <h2>Awards & Olympiads</h2>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="international">International</button>
+      <button class="filter-btn" data-filter="university">University-level</button>
+    </div>
+
+    <div class="awards-grid">
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-gold">G</div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Gold Medal (Highest Score) — OMIME</div>
+        <div class="award-org">Military Institute of Engineering Mathematics Olympiad</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-gold">G</div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Gold Medal — Elon Lages de Lima Olympiad</div>
+        <div class="award-org">Brazilian Mathematics Society</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university international">
+        <div class="award-medal medal-silver">S</div>
+        <div class="award-year">2023</div>
+        <div class="award-title">Silver Medal — CIIM</div>
+        <div class="award-org">Ibero-American Interuniversity Mathematics Competition</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+          <span class="tag tag-international">International</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-silver">S</div>
+        <div class="award-year">2023</div>
+        <div class="award-title">Silver Medal — Mathematics Olympiad of Rio de Janeiro</div>
+        <div class="award-org">FAPERJ</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university international">
+        <div class="award-medal medal-mention">M</div>
+        <div class="award-year">2023</div>
+        <div class="award-title">Honorable Mention — IMC</div>
+        <div class="award-org">International Mathematics Competition for University Students · Bulgaria</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+          <span class="tag tag-international">International</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-silver">S</div>
+        <div class="award-year">2023</div>
+        <div class="award-title">Silver Medal — IME Mathematics Olympiad (OMIME)</div>
+        <div class="award-org">Military Institute of Engineering</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-mention">M</div>
+        <div class="award-year">2022</div>
+        <div class="award-title">Honorable Mention — Mathematics Olympiad of Rio de Janeiro</div>
+        <div class="award-org">FAPERJ</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university">
+        <div class="award-medal medal-bronze">B</div>
+        <div class="award-year">2022</div>
+        <div class="award-title">Bronze Medal — Elon Lages de Lima Olympiad</div>
+        <div class="award-org">Brazilian Mathematics Society</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="university international">
+        <div class="award-medal medal-mention">M</div>
+        <div class="award-year">2022</div>
+        <div class="award-title">Honorable Mention — IMC</div>
+        <div class="award-org">International Mathematics Competition for University Students · Bulgaria</div>
+        <div class="award-tags">
+          <span class="tag tag-university">University</span>
+          <span class="tag tag-international">International</span>
+        </div>
+      </div>
+
+      <div class="award-card" data-tags="">
+        <div class="award-medal medal-silver">S</div>
+        <div class="award-year">2021</div>
+        <div class="award-title">Silver Medal — Mathematics Olympiad of Rio de Janeiro</div>
+        <div class="award-org">FAPERJ</div>
+        <div class="award-tags"></div>
+      </div>
+
+      <div class="award-card" data-tags="">
+        <div class="award-medal medal-mention">M</div>
+        <div class="award-year">2019</div>
+        <div class="award-title">Honorable Mention — Brazilian Physics Olympiad</div>
+        <div class="award-org">Sociedade Brasileira de Fisica</div>
+        <div class="award-tags"></div>
+      </div>
+
+      <div class="award-card" data-tags="">
+        <div class="award-medal medal-mention">M</div>
+        <div class="award-year">2018</div>
+        <div class="award-title">Honorable Mention — OBMEP</div>
+        <div class="award-org">Brazilian Mathematics Olympiad for Public Schools</div>
+        <div class="award-tags"></div>
+      </div>
+
+      <div class="award-card" data-tags="">
+        <div class="award-medal medal-silver">S</div>
+        <div class="award-year">2018</div>
+        <div class="award-title">Silver Medal — Canguru Mathematics Competition</div>
+        <div class="award-org">Kangaroo Mathematics</div>
+        <div class="award-tags"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- EXPERIENCE -->
+  <section id="Work Experience & Studies">
+    <div class="section-header">
+      <span class="section-num">02 —</span>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2025 — present</div>
+        <div class="timeline-body">
+          <div class="timeline-title">ENSTA Paris · Institut Polytechnique de Paris</div>
+          <div class="timeline-role">Student — Major in Computer Science</div>
+          <p class="timeline-desc">Minor in Artificial Intelligence and Cyberphysics. Palaiseau, France.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2024 — Feb 2025</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Vista Capital</div>
+          <div class="timeline-role">Risk & Pricing Intern</div>
+          <p class="timeline-desc">Developed pricing models for exotic assets at one of Brazil's highest-volatility asset managers. Automated risk and pricing pipelines with Apache Airflow on Kubernetes, reducing processing time by over 50%.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2022 — 2025</div>
+        <div class="timeline-body">
+          <div class="timeline-title">IME — Military Institute of Engineering</div>
+          <div class="timeline-role">Student — Computer Engineering</div>
+          <p class="timeline-desc">Three years of Computer Engineering coursework. Rio de Janeiro, Brazil. Ranked 65th out of 4,773 in the entrance exam.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Mar 2022 — Nov 2022</div>
+        <div class="timeline-body">
+          <div class="timeline-title">IME — Undergraduate Research</div>
+          <div class="timeline-role">Research Assistant</div>
+          <p class="timeline-desc">Algebraic Structures in Geometry under Prof. Jose Jaime Ramon Mari. Topics included exterior algebra, Lie groups, supersymmetry, and projective geometry.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">03 —</span>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Brazilian computer engineer and mathematician, currently studying at ENSTA Paris
+          (Institut Polytechnique de Paris). I am interested in the intersection of rigorous mathematics
+          and real-world computation — from convex optimization and graph-based methods to quantitative finance and stochastic modeling.
+        </p>
+
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-level">Proficient</span>
+            <div class="skill-tags">
+              <span class="stag">C/C++</span>
+              <span class="stag">Python</span>
+              <span class="stag">GoLang</span>
+              <span class="stag">MATLAB</span>
+              <span class="stag">SQL</span>
+              <span class="stag">LaTeX</span>
+              <span class="stag">git</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-level">Learning</span>
+            <div class="skill-tags">
+              <span class="stag">Rust</span>
+              <span class="stag">Docker</span>
+              <span class="stag">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-links">
+        <a class="about-link" href="https://github.com/AlfredoQuintellaP" target="_blank">
+          GitHub <span class="link-arrow">-&gt;</span>
+        </a>
+        <a class="about-link" href="https://www.linkedin.com/in/alfredo-quintella-322818165/" target="_blank">
+          LinkedIn <span class="link-arrow">-&gt;</span>
+        </a>
+        <a class="about-link email-link" href="#">
+          Email <span class="link-arrow">-&gt;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+  <footer>
+    <span>Alfredo Quintella Pinto</span>
+    <span>Built with plain HTML, CSS & JS · Hosted on GitHub Pages</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
